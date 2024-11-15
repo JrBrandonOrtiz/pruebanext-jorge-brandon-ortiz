@@ -1,0 +1,58 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+
+.aside {
+    background-color: $color-tertiary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 100vh;
+    text-align: center;
+    color: $color-text;
+    padding: 1rem;
+
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 0.1rem solid $color-border;
+
+
+        .title {
+            font-weight: 700;
+            padding: 0.2rem;
+        }
+
+        .icon{
+            margin-top: 0.5rem;
+            font-size: 2rem;
+           
+        }
+    }
+
+    .user{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 600;
+    }
+
+    .options {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+        .itemCar{
+            @include box-shadow();
+            @include border-radius(0.5rem);
+            background-color: $color-primary;
+        }
+
+    }
+}

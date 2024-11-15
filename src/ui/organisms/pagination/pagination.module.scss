@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+.paginationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .strong{
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include border-radius(50%);
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+
+}

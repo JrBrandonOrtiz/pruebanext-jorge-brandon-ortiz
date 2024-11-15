@@ -1,0 +1,50 @@
+.fieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.input {
+    display: none;
+}
+
+.inputError {
+    border: 1px solid #ef4444;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.inputFile + .label {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.inputFile + .label:hover {
+    background-color: #218838;
+}
+
+.inputFile + .label:active {
+    background-color: #1e7e34;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 8px;
+}

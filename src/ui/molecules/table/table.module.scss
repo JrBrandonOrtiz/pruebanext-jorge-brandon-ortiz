@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+.container{
+    margin: 2% 0;
+    color: $color-text;
+
+    .title{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .table{
+        @include box-shadow();
+        @include border-radius(0.8rem);
+        font-size: 0.9rem;
+        width: 98%;
+        background-color: $color-primary;
+
+        thead {
+            text-align: left;
+            color: $color-secondary;
+            font-weight: bold;
+
+            th {
+                padding: 0.8rem;
+                border-bottom: 0.1rem solid $color-border;
+               
+            }
+        }
+
+        tbody {
+            td {
+                padding: 1rem;
+                border-bottom: 0.1rem solid $color-border;
+            }
+        }
+    }
+}
