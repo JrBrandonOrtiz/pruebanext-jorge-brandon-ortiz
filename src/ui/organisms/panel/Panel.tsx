@@ -5,8 +5,6 @@ import { useForm } from "react-hook-form";
 import VehicleForm from "../formVehicle/FormVehicle";
 import Modal from "../modal/Modal";
 
-
-
 const Panel: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [vehicleID, setVehicleID] = useState<number>();
@@ -20,14 +18,8 @@ const Panel: React.FC = () => {
         setVehicleID(undefined);
     };
 
-
-    
     return (
         <div>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
             <ButtonCreate text="Agregar vehículo" onClick={openModal} />
 
             <Modal isVisible={isModalOpen} onClose={closeModal}>
